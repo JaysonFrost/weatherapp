@@ -1,0 +1,89 @@
+.home
+	background: #315063
+	height: 803px
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	font-family: Roboto
+	font-weight: 200
+	color: #000
+
+	input
+		border: 1px solid #cecbcb70
+		border-radius: 20px
+		background-color: #fff
+		padding: 10px
+		font-size: 14px
+		width: 300px
+		height: 40px
+
+		&:focus
+			outline: none
+.currentWeather
+	width: 0
+	height: 55px
+	display: flex
+	opacity: 0
+	visibility: hidden
+	transition: all 0.3s ease
+	top: 0
+	font-size: 17px
+	position: absolute
+	justify-content: space-evenly
+	align-items: center
+	left: -330px
+	background-color: #03a9f49e
+
+	&_show
+		opacity: 1
+		visibility: visible
+		width: 300px
+
+.weather
+	width: 500px
+	height: 400px
+	background: #00bcd4
+	margin-top: 20px
+	border-radius: 4px
+	position: relative
+	display: flex
+	align-items: center
+	flex-direction: column
+	padding: 15px
+	margin-top: 15px
+
+	&_list
+		width: 100%
+		overflow: scroll
+		margin-top: 15px
+
+		&_ul
+			list-style: none
+			padding: 0 15px
+			margin: 0
+
+		&_li
+			padding: 7px
+			display: flex
+			justify-content: space-between
+			font-weight: 200
+			transition: all 0.3s ease
+			align-items: center
+
+			&:hover
+				background-color: red
+				border-radius: 35px
+				background-color: #2196f347
+
+		&_name
+			color: white
+
+		&_status
+			color: black
+
+	&_removeItem
+		cursor: pointer
+		height: 20px
+		width: 20px
+
+
